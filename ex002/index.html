@@ -10,25 +10,25 @@
 <body>
     <h1>Calculadora</h1>
     <div class="calculadora">
-        <div class="display">0</div>
+        <input type="text" placeholder="0" class="display" id="display">
         <div class="keys">
-            <button id="limpar" data-all-clear>AC</button>
-            <button class="operadores" data-operator>/</button>
-            <button class="operadores" data-operator>x</button>
-            <button class="operadores" data-operator>-</button>
-            <button data-number>7</button>
-            <button data-number>8</button>
-            <button data-number>9</button>
-            <button class="operadores" data-operator>+</button>
-            <button data-number>4</button>
-            <button data-number>5</button>
-            <button data-number>6</button>
-            <button class="result" data-equals>=</button>
-            <button data-number>1</button>
-            <button data-number>2</button>
-            <button data-number>3</button>
-            <button id="zero" data-number="">0</button>
-            <button id="ponto" data-number="">.</button>
+            <button id="limpar" data-all-clear onclick="botaoLimpar()">AC</button>
+            <button class="operadores" data-operator="/" onclick="botaoOperadores()">/</button>
+            <button class="operadores" data-operator="*" onclick="botaoOperadores()">x</button>
+            <button class="operadores" data-operator="-" onclick="botaoOperadores()">-</button>
+            <button class="botao-padrao" data-number="7" onclick="botaoPadrao()">7</button>
+            <button class="botao-padrao" data-number="8" onclick="botaoPadrao()">8</button>
+            <button class="botao-padrao" data-number="9" onclick="botaoPadrao()">9</button>
+            <button class="operadores" data-operator="+" onclick="botaoOperadores()">+</button>
+            <button class="botao-padrao" data-number="4" onclick="botaoPadrao()">4</button>
+            <button class="botao-padrao" data-number="5" onclick="botaoPadrao()">5</button>
+            <button class="botao-padrao" data-number="6" onclick="botaoPadrao()">6</button>
+            <button class="result" data-equals="=" onclick="botaoResultado()">=</button>
+            <button class="botao-padrao" data-number="1" onclick="botaoPadrao()">1</button>
+            <button class="botao-padrao" data-number="2" onclick="botaoPadrao()">2</button>
+            <button class="botao-padrao" data-number="3" onclick="botaoPadrao()">3</button>
+            <button class="botao-padrao" id="zero" data-number="0" onclick="botaoPadrao()">0</button>
+            <button class="botao-padrao" id="ponto" data-number="." onclick="botaoPadrao()">.</button>
         </div>
     </div>
     <script src="js/script.js"></script>
