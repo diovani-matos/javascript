@@ -10,25 +10,25 @@
 <body>
     <h1>Calculadora</h1>
     <div class="calculadora">
-        <input type="text" placeholder="0" class="display" id="display">
+        <input type="text" class="display" id="display">
         <div class="keys">
             <button id="limpar" class="limpar">AC</button>
             <button class="operadores">/</button>
             <button class="operadores">x</button>
             <button class="operadores">-</button>
-            <button class="botao-padrao">7</button>
-            <button class="botao-padrao">8</button>
-            <button class="botao-padrao">9</button>
+            <button class="botao-padrao" onclick="insertNum('7')">7</button>
+            <button class="botao-padrao" onclick="insertNum('8')">8</button>
+            <button class="botao-padrao" onclick="insertNum('9')">9</button>
             <button class="operadores">+</button>
-            <button class="botao-padrao">4</button>
-            <button class="botao-padrao">5</button>
-            <button class="botao-padrao">6</button>
+            <button class="botao-padrao" onclick="insertNum('4')">4</button>
+            <button class="botao-padrao" onclick="insertNum('5')">5</button>
+            <button class="botao-padrao" onclick="insertNum('6')">6</button>
             <button class="result">=</button>
-            <button class="botao-padrao">1</button>
-            <button class="botao-padrao">2</button>
-            <button class="botao-padrao">3</button>
-            <button class="botao-padrao" id="zero">0</button>
-            <button class="botao-padrao" id="ponto">.</button>
+            <button class="botao-padrao" onclick="insertNum('1')">1</button>
+            <button class="botao-padrao" onclick="insertNum('2')">2</button>
+            <button class="botao-padrao" onclick="insertNum('3')">3</button>
+            <button class="botao-padrao" id="zero" onclick="insertNum('0')">0</button>
+            <button class="botao-padrao" id="ponto" onclick="insertNum('.')">.</button>
         </div>
     </div>
 </body>
