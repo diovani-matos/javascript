@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de condições JS</title>
+</head>
+<body>
+    <h1>Aula de Condições</h1>
+    <div id="calc-media">
+        Digite a primeira nota: <input type="number" name="n1" id="n1">
+        Digite a segunda nota: <input type="number" name="n2" id="n2">
+        <input type="submit" value="calcular" onclick="calcular()">
+        <div id="media">
+            
+        </div>
+    </div>
+<script>
+    function calcular() {
+        const n1 = Number(document.querySelector('#n1').value);
+        const n2 = Number(document.querySelector('#n2').value);
+        const media = (n1 + n2)/2;
+            media.innerHTML = `A sua média é ${media}`
+    }
+</script>
+</body>
+</html>
